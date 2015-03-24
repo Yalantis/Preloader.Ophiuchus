@@ -2,7 +2,7 @@
 
 ![Preview](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Example/Ophiuchus/Resources/animation.gif)
 
-A custom Label consisted of CALayers of a sign which consist of CALayers of letters.
+Custom Label displaying to apply animations on whole text or letters.
 
 Made in [Yalantis](http://yalantis.com/).
 
@@ -12,7 +12,7 @@ Inspired by [this project on Dribble](https://dribbble.com/shots/1938357-Preload
 
 ####[CocoaPods](http://cocoapods.org)
 ```ruby
-pod 'Ophiuchus', '~> 1.0'
+pod 'Ophiuchus', '~> 1.0.0'
 ```
 
 ####Manual Installation
@@ -62,6 +62,26 @@ fillAnimation.duration = 3.0;
 
 [firstLetter.mask addAnimation:fillAnimation forKey:@"fillAnimation"];
 
+```
+
+You can also animate layer with progress:
+```
+YALProgressAnimatingLayer *secondLetter = self.yalLabel.fillLayer.sublayers[1];
+CABasicAnimation *colorAnimation = [CABasicAnimation animationWithKeyPath:@"fillColor"];
+
+colorAnimation.fromValue = (id)[UIColor redColor].CGColor;
+colorAnimation.toValue = (id)[UIColor blueColor].CGColor;
+
+[secondLetter allowProgressToControlAnimations];
+[secondLetter addAnimation:colorAnimation forKey:@"colorAnimation"];
+
+secondLetter.progress = 0.f;
+```
+
+And then when you need to update progress:
+```
+YALProgressAnimatingLayer *secondLetter = self.yalLabel.fillLayer.sublayers[1];
+secondLetter.progress = value;
 ```
 
 ##License
