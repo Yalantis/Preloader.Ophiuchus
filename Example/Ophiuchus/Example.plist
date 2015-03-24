@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>viewBackgroundColor</key><string>30 23 25</string>
+        <key>fillColor</key><string>252 163 45</string>
+        <key>strokeColor</key><string>30 23 25</string>
+        <key>text</key><string>Y</string>
+        <key>fontName</key><string>BigNoodleTitling</string>
+        <key>fontSize</key><string>210</string>
+        <key>contentMode</key><string>1</string>
+        <key>showingDots</key><string>1</string>
+    </dict>
+    <dict>
+        <key>viewBackgroundColor</key><string>30 23 25</string>
+        <key>fillColor</key><string>252 163 45</string>
+        <key>strokeColor</key><string>30 23 25</string>
+        <key>text</key><string>STANDS</string>
+        <key>fontName</key><string>DAGGERSQUARE</string>
+        <key>fontSize</key><string>50</string>
+        <key>contentMode</key><string>1</string>
+        <key>showingDots</key><string>0</string>
+    </dict>
+    <dict>
+        <key>viewBackgroundColor</key><string>30 23 25</string>
+        <key>fillColor</key><string>252 163 45</string>
+        <key>strokeColor</key><string>30 23 25</string>
+        <key>text</key><string>FOR</string>
+        <key>fontName</key><string>Modak</string>
+        <key>fontSize</key><string>70</string>
+        <key>contentMode</key><string>1</string>
+        <key>showingDots</key><string>0</string>
+    </dict>
+    <dict>
+        <key>viewBackgroundColor</key><string>30 23 25</string>
+        <key>fillColor</key><string>252 163 45</string>
+        <key>strokeColor</key><string>30 23 25</string>
+        <key>text</key><string>YALANTIS</string>
+        <key>fontName</key><string>BigNoodleTitling</string>
+        <key>fontSize</key><string>70</string>
+        <key>contentMode</key><string>1</string>
+        <key>showingDots</key><string>0</string>
+    </dict>
+<!--<dict>
+        <key>viewBackgroundColor</key><string></string>
+        <key>fillColor</key><string></string>
+        <key>strokeColor</key><string></string>
+        <key>text</key><string></string>
+        <key>fontName</key><string></string>
+        <key>fontSize</key><string></string>
+        <key>contentMode</key><string></string>
+        <key>showingDots</key><string></string>
+    </dict>-->
+</array>
+</plist>

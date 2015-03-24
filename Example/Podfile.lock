@@ -1,0 +1,14 @@
+PODS:
+  - Ophiuchus (0.1.0)
+
+DEPENDENCIES:
+  - Ophiuchus (from `../`)
+
+EXTERNAL SOURCES:
+  Ophiuchus:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Ophiuchus: 4adab64ff98e28d26941baae27c4c04f83f05355
+
+COCOAPODS: 0.35.0
