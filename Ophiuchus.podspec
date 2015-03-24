@@ -4,7 +4,6 @@ Pod::Spec.new do |spec|
 
   spec.homepage = "https://github.com/Yalantis/Ophiuchus"
   spec.summary = "A custom Label consisted of CALayers of a sign which consist of CALayers of letters."
-  spec.screenshot = "https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Example/Ophiuchus/Resources/animation.gif"
 
   spec.author = "Yalantis"
   spec.license = { :type => "MIT", :file => "LICENSE" }
