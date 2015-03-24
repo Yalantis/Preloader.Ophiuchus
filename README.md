@@ -2,7 +2,7 @@
 
 ![Preview](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Example/Ophiuchus/Resources/animation.gif)
 
-Custom Label displaying to apply animations on whole text or letters.
+Custom Label to apply animations on whole text or letters.
 
 Made in [Yalantis](http://yalantis.com/).
 
