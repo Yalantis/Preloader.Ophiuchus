@@ -1,6 +1,6 @@
 # Ophiuchus
 
-![Preview](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Pods/Ophiuchus/Example/Ophiuchus/Resources/animation.gif)
+![Preview](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Example/Ophiuchus/Resources/animation.gif)
 
 A custom Label consisted of CALayers of a sign which consist of CALayers of letters.
 
