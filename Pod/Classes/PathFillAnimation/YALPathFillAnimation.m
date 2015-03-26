@@ -3,6 +3,7 @@
 #import "YALPathFillAnimation.h"
 #import "UIBezierPath+YAL_Utils.h"
 
+CGFloat yal_cropAngleToHalfCircle(CGFloat angle);
 CGFloat yal_proportion(CGFloat sourceValue, CGFloat sourceMinimal, CGFloat sourceMaximal, CGFloat destinationMinimal, CGFloat destinationMaximal);
 
 @implementation YALPathFillAnimation
@@ -38,35 +39,25 @@ CGFloat yal_proportion(CGFloat sourceValue, CGFloat sourceMinimal, CGFloat sourc
 }
 
 - (CGRect)rectWithPath:(CGPathRef)path andDirectionAngle:(CGFloat)directionAngle {
-    CGRect bounds = CGPathGetPathBoundingBox(path);
-    CGRect rect = bounds;
-    CGFloat diagonal = sqrt(pow((rect.size.width), 2.0) + pow((rect.size.height), 2.0));
+    CGRect rect = CGPathGetBoundingBox(path);
+    CGFloat height = rect.size.height;
+    CGFloat width = rect.size.width;
+    CGFloat alpha = [self properRadianFromAngle:directionAngle];
     
-    rect.size.height = [self heightWithRect:rect diagonal:diagonal andDirectionAngle:directionAngle];
-    rect.size.width = diagonal;
+    rect.size.height = height * cosf(alpha) + width * sinf(alpha);
+    rect.size.width = sqrt(pow((width), 2.0) + pow((height), 2.0));
     
     return rect;
 }
 
-- (CGFloat)heightWithRect:(CGRect)rect diagonal:(CGFloat)diagonal andDirectionAngle:(CGFloat)directionAngle {
-    directionAngle = abs(directionAngle);
-    CGFloat height = 0.f;
+- (CGFloat)properRadianFromAngle:(CGFloat)angle {
+    angle = yal_cropAngleToHalfCircle(fabsf(angle));
     
-    if (directionAngle > 180.f) {
-        directionAngle -= 180.f;
+    if (angle > 90) {
+        angle = 180 - angle;
     }
     
-    if (directionAngle <= 45.f) {
-        height = yal_proportion(directionAngle, 0.f, 45.f, rect.size.height, diagonal);
-    } else if (directionAngle <= 90.f) {
-        height = yal_proportion(directionAngle, 45.f, 90.f, rect.size.width, diagonal);
-    } else if (directionAngle <= 135.f) {
-        height = yal_proportion(directionAngle, 135.f, 90.f, rect.size.width, diagonal);
-    } else if (directionAngle <= 180.f) {
-        height = yal_proportion(directionAngle, 180.f, 135.f, rect.size.height, diagonal);
-    }
-    
-    return height;
+    return angle * M_PI / 180.f;
 }
 
 - (CGRect)centerRect:(CGRect)rect inPath:(CGPathRef)path {
@@ -77,6 +68,14 @@ CGFloat yal_proportion(CGFloat sourceValue, CGFloat sourceMinimal, CGFloat sourc
 }
 
 @end
+
+CGFloat yal_cropAngleToHalfCircle(CGFloat angle) {
+    if (angle > 180) {
+        return yal_cropAngleToHalfCircle(angle - 180);
+    } else {
+        return angle;
+    }
+}
 
 CGFloat yal_proportion(CGFloat sourceValue, CGFloat sourceMinimal, CGFloat sourceMaximal, CGFloat destinationMinimal, CGFloat destinationMaximal) {
     CGFloat percent = (sourceValue - sourceMinimal) / (sourceMaximal - sourceMinimal);
