@@ -40,6 +40,11 @@
             CTRunGetPositions(run, range, &position);
             
             CGPathRef letter = CTFontCreatePathForGlyph(runFont, glyph, NULL);
+            
+            if (!letter) {
+                continue;
+            }
+            
             CGAffineTransform transform = CGAffineTransformMakeTranslation(position.x, position.y);
             UIBezierPath *path = [UIBezierPath bezierPathWithCGPath:letter];
             CGRect boundingBox = CGPathGetBoundingBox(letter);
