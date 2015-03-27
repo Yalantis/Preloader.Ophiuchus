@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, '7.0'
   spec.ios.deployment_target = '7.0'
 
-  spec.source = { :git => "git@github.com:Yalantis/Preloader.Ophiuchus.git", :tag => "1.0.2" }
+  spec.source = { :git => "https://github.com/Yalantis/Preloader.Ophiuchus.git", :tag => "1.0.2" }
 
   spec.requires_arc = true
 
