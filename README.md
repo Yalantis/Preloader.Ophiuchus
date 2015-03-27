@@ -1,6 +1,8 @@
 # Ophiuchus
 
+![Yalantis](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Example/Ophiuchus/Resources/yalantistwodirections.gif)
 ![Preview](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Example/Ophiuchus/Resources/animation.gif)
+![The Green Horse](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/Example/Ophiuchus/Resources/thegreenhorse.gif)
 
 Custom Label to apply animations on whole text or letters.
 
@@ -17,7 +19,7 @@ pod 'Ophiuchus', '~> 1.0.2'
 
 ####Manual Installation
 
-Alternatively you can directly add all the source files from to your project.
+Alternatively you can directly add all the source files from Ophiuchus to your project.
 
 1. Download the [latest code version](https://github.com/Yalantis/Ophiuchus/archive/master.zip) or add the repository as a git submodule to your git-tracked project. 
 2. Open your project in Xcode, then drag and drop all folders directories in Pods/Classes/ onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project. 
