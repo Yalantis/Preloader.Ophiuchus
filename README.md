@@ -12,7 +12,7 @@ Inspired by [this project on Dribble](https://dribbble.com/shots/1938357-Preload
 
 ####[CocoaPods](http://cocoapods.org)
 ```ruby
-pod 'Ophiuchus', '~> 1.0.0'
+pod 'Ophiuchus', '~> 1.0.1'
 ```
 
 ####Manual Installation
