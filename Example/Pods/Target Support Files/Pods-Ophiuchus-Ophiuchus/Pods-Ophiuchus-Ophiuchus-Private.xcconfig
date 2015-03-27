@@ -1,5 +1,6 @@
 #include "Pods-Ophiuchus-Ophiuchus.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/Ophiuchus" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Ophiuchus"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Ophiuchus" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Ophiuchus"
 OTHER_LDFLAGS = ${PODS_OPHIUCHUS_OPHIUCHUS_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

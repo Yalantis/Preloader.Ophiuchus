@@ -8,7 +8,7 @@
 
 // Ophiuchus
 #define COCOAPODS_POD_AVAILABLE_Ophiuchus
-#define COCOAPODS_VERSION_MAJOR_Ophiuchus 0
-#define COCOAPODS_VERSION_MINOR_Ophiuchus 1
-#define COCOAPODS_VERSION_PATCH_Ophiuchus 0
+#define COCOAPODS_VERSION_MAJOR_Ophiuchus 1
+#define COCOAPODS_VERSION_MINOR_Ophiuchus 0
+#define COCOAPODS_VERSION_PATCH_Ophiuchus 3
 
