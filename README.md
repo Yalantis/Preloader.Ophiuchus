@@ -6,9 +6,9 @@
 
 Custom Label to apply animations on whole text or letters.
 
-[![Yalantis](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/yalantis.png)](http://yalantis.com/?utm_source=github)
+[![Yalantis](https://raw.githubusercontent.com/Yalantis/Ophiuchus/master/yalantis.png)](https://yalantis.com/?utm_source=github)
 
-Check an [article on our blog](http://yalantis.com/blog/animated-preloader-ios/?utm_source=github)
+Check an [article on our blog](https://yalantis.com/blog/animated-preloader-ios/?utm_source=github)
 
 Inspired by [this project on Dribble](https://dribbble.com/shots/1938357-Preloader-For-Yalantis?list=users&offset=3)
 
