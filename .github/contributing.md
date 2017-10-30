@@ -2,9 +2,9 @@
 
 #### **Did you find a bug?**
 
-* **Ensure the bug was not already reported** by searching under [Issues](https://github.com/Yalantis/Ophiuchus/issues).
+* **Ensure the bug was not already reported** by searching under [Issues](https://github.com/Yalantis/Preloader.Ophiuchus/issues).
 
-* If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/Yalantis/Ophiuchus/issues/new). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **example project** demonstrating the expected behavior that is not occurring.
+* If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/Yalantis/Preloader.Ophiuchus/issues/new). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **example project** demonstrating the expected behavior that is not occurring.
 
 * Fill appropriate section in issue template and remove the section you aren't interested in.
 
