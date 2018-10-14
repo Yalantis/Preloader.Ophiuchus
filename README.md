@@ -14,31 +14,31 @@ Inspired by [this project on Dribble](https://dribbble.com/shots/1938357-Preload
 
 ## Installation
 
-####[CocoaPods](http://cocoapods.org)
+#### [CocoaPods](http://cocoapods.org)
 ```ruby
 pod 'Ophiuchus', '~> 1.0.3'
 ```
 
-####Manual Installation
+#### Manual Installation
 
 Alternatively you can directly add all the source files from Ophiuchus to your project.
 
-1. Download the [latest code version](https://github.com/Yalantis/Ophiuchus/archive/master.zip) or add the repository as a git submodule to your git-tracked project. 
-2. Open your project in Xcode, then drag and drop all folders directories in Pods/Classes/ onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project. 
+1. Download the [latest code version](https://github.com/Yalantis/Ophiuchus/archive/master.zip) or add the repository as a git submodule to your git-tracked project.
+2. Open your project in Xcode, then drag and drop all folders directories in Pods/Classes/ onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
 3. Include YALLabel wherever you need it with `#import "YALLabel.h"`.
 
-##Introduction
+## Introduction
 
-####YALProgressAnimatingLayer
+#### YALProgressAnimatingLayer
 `YALProgressAnimatingLayer` is a subclass of `CAShapeLayer` designed to control animations with progress. This feature is disabled until you invoke `[layer allowProgressToControlAnimations]`, after that `duration` and `timeOffset` properties of the layer will be passed to any animation added to the layer. Thus you gain control over animations added to the layer by passing values to `progress` property (varies from 0.f to 1.f). `YALProgressAnimatingLayer` mask is of same type as the layer.
 
-####YALTextLayer
+#### YALTextLayer
 `YALTextLayer` is a subclass of `YALProgressAnimatingLayer` designed to display array of `UIBezierPath` instances as `YALProgressAnimatingLayer` sublayers. You can access and manipulate each letter sublayer. `YALTextLayer` constructs sublayers with mask of bounding box of shapes they have by default.
 
-####YALLabel
+#### YALLabel
 `YALLabel` is a custom label consisting of three `YALTextLayer` instances to draw background fill, stroke and fill of text.
 
-##Usage
+## Usage
 
 Drop a `UIView` on a storyboard and set it's class to `YALLabel` and configure `fontName`, `fontSize`, `text`, `strokeWidth` and colors.
 
@@ -88,13 +88,13 @@ YALProgressAnimatingLayer *secondLetter = self.yalLabel.fillLayer.sublayers[1];
 secondLetter.progress = value;
 ```
 
-##Let us know!
+## Let us know!
 
 We’d be really happy if you senв us links to your projects where you use our component. Just send an email to github@yalantis.com And do let us know if you have any questions or suggestion regarding the animation.
 
 P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on how to make UI for iOS (Android) better than better. Stay tuned!
 
-##License
+## License
 
 The MIT License (MIT)
 
