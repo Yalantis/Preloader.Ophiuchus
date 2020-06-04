@@ -89,10 +89,12 @@
                                                  [self.fillLayer removeFromSuperlayer];
                                              }];
         CGRect frame = CGPathGetPathBoundingBox(self.fillLayer.path);
-        self.fillLayer.position = (CGPoint){
-            (CGRectGetWidth(self.frame) - CGRectGetWidth(frame)) / 2.f,
-            (CGRectGetHeight(self.frame) - CGRectGetHeight(frame)) / 2.f
-        };
+        if (!isnan(CGRectGetWidth(frame))) {
+            self.fillLayer.position = (CGPoint){
+                (CGRectGetWidth(self.frame) - CGRectGetWidth(frame)) / 2.f,
+                (CGRectGetHeight(self.frame) - CGRectGetHeight(frame)) / 2.f
+            };
+        }
     }
 }
 
@@ -108,10 +110,12 @@
                                                }];
         CGRect frame = CGPathGetPathBoundingBox(self.strokeLayer.path);
         frame = CGRectInset(frame, self.strokeWidth, self.strokeWidth);
-        self.strokeLayer.position = (CGPoint){
-            (CGRectGetWidth(self.frame) - CGRectGetWidth(frame)) / 2.f,
-            (CGRectGetHeight(self.frame) - CGRectGetHeight(frame)) / 2.f
-        };
+        if (!isnan(CGRectGetWidth(frame))) {
+            self.strokeLayer.position = (CGPoint){
+                (CGRectGetWidth(self.frame) - CGRectGetWidth(frame)) / 2.f,
+                (CGRectGetHeight(self.frame) - CGRectGetHeight(frame)) / 2.f
+            };
+        }
     }
 }
 
