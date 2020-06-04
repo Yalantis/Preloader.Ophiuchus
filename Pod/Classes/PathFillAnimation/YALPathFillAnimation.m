@@ -51,7 +51,7 @@ CGFloat yal_proportion(CGFloat sourceValue, CGFloat sourceMinimal, CGFloat sourc
 }
 
 - (CGFloat)properRadianFromAngle:(CGFloat)angle {
-    angle = yal_cropAngleToHalfCircle(fabsf(angle));
+    angle = yal_cropAngleToHalfCircle(fabs(angle));
     
     if (angle > 90) {
         angle = 180 - angle;
